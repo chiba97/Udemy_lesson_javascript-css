@@ -9,16 +9,25 @@ body {
   background-color: black;
   -webkit-animation: sk-bouncedelay 1.4s;
           animation: sk-bouncedelay 1.4s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
 }
 
 @-webkit-keyframes sk-bouncedelay {
   from {
     -webkit-transform: scale(0);
             transform: scale(0);
+    background-color: burlywood;
   }
   to {
     -webkit-transform: scale(1);
             transform: scale(1);
+    background-color: cadetblue;
   }
 }
 
@@ -26,10 +35,12 @@ body {
   from {
     -webkit-transform: scale(0);
             transform: scale(0);
+    background-color: burlywood;
   }
   to {
     -webkit-transform: scale(1);
             transform: scale(1);
+    background-color: cadetblue;
   }
 }
 /*# sourceMappingURL=loader.css.map */
