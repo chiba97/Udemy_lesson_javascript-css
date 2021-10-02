@@ -1,1 +1,20 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+a {
+  color: orange;
+}
+
+a:visited {
+  color: blue;
+}
+
+div span {
+  color: red;
+}
+
+div span:first-child {
+  color: purple;
+}
+
+div span:not(.cls) {
+  color: olivedrab;
+}
+/*# sourceMappingURL=style.css.map */

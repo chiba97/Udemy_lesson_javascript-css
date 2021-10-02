@@ -1,0 +1,19 @@
+a {
+  color: orange;
+  &:visited{
+    color: blue;
+
+  }
+}
+
+div{
+  span{
+    color:red;
+  }
+  span:first-child{
+    color: purple;
+  }
+  span:not(.cls){
+    color: olivedrab;
+  }
+}
