@@ -24,9 +24,44 @@
 // });
 
 
-const arry = [1,2,3,4,5];
+// const arry = [1,2,3,4,5];
 
-arry.forEach(val => console.log(val))
+// arry.reduce(function(accu, curr){
+//   console.log(accu,curr)
+//   return accu + curr;
+// },10);
+
+
+
+// const str = "animation";
+// const strArry = str.split("");
+
+// console.log(strArry);
+
+// const result = strArry.reduce((acure,curr) => {
+//   return `${acure}<${curr}>`;
+// },"")
+
+// console.log(result)
+
+
+const str = "animation";
+const strArry = str.split("");
+
+function tag(accu,curr){
+  return `${accu}<${curr}>`;
+}
+
+
+function reduce(arry,callback,defaultValue){
+  let accu = defaultValue;
+  for(let i = 0; i < arry.length; i++)
+  let curr = arry[i];
+  callback(accu,curr);
+}
+
+const result = reduce(strArry,tag, "");
+console.log(result);
 
 
 
